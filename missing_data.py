@@ -20,3 +20,8 @@ df.dropna(axis=1)
 df.dropna(thresh=2)
 df.fillna(value='FILL VALUE')
 df['A'].fillna(value=df['A'].mean())
+
+# will replace  Nan value in dataframe with value -99  
+df.replace(to_replace = np.nan, value = -99) 
+# filling  null value using fillna() function  
+df.fillna(method ='bfill')
