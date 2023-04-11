@@ -1,3 +1,5 @@
 # Select rows where age is greater than 30 and income is less than 65000
 df_query = df.query('Count > 30 and Rank < 20')
 df_query.head()
+if i want to make the column name as a colume value and index too:
+df1= df.stack().to_frame(name= "values").reset_index()
